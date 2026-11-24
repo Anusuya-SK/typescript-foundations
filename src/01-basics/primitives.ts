@@ -1,4 +1,4 @@
-// The pattern is, name: type = value;
+// The pattern is, variable name: type = value;
 
 let age: number = 25;
 let username: string = "Anu";

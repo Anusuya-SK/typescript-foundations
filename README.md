@@ -1,6 +1,6 @@
 # typescript-foundations
 
-A JavaScript developer learning TypeScript step by step, then moving on to React + TypeScript.
+Building solid TypeScript foundations: write typed code, read compiler errors, and ship a small project.
 
 ## Covered so far
 
@@ -8,9 +8,22 @@ A JavaScript developer learning TypeScript step by step, then moving on to React
 - `tsconfig.json` with strict mode
 - `.gitignore` and GitHub repo setup
 
-## Up next
+## Currently learning
 
-- Days 1-2: `tsc` and strict mode, primitive types, arrays, tuples, `any` vs `unknown`
+- Part 1 (Basics): `tsc` and strict mode, primitive types, arrays, tuples, `any` vs `unknown`
+
+## Key points (quick revision)
+
+### Part 1: Basics
+
+- **`tsc` vs `tsx`**: `tsc` type-checks, `tsx` only runs the file (it won't catch type errors).
+- **Strict mode**: `"strict": true` turns on all the strict checks, including `noImplicitAny` and `strictNullChecks`.
+- **Type annotation**: telling TypeScript a value's type, `const age: number = 25;` (pattern: `name: type = value`).
+- **Type inference**: TypeScript works the type out itself, so `let count = 0;` is already a `number`.
+- **Primitives**: `string`, `number`, `boolean`, `null`, `undefined`, `bigint`, `symbol`. Always lowercase.
+- **Arrays**: `number[]` or `Array<number>`, every item must be the same type.
+- **Tuples**: fixed length and a fixed type per position, `[string, number]`. React's `useState` returns one.
+- **`any` vs `unknown`**: `any` switches type checking off, `unknown` forces you to check the type before using the value. Prefer `unknown`.
 
 ## Run a file
 
