@@ -7,10 +7,11 @@ Building solid TypeScript foundations: write typed code, read compiler errors, a
 - Project setup with TypeScript, `tsx` and `@types/node`
 - `tsconfig.json` with strict mode
 - `.gitignore` and GitHub repo setup
+- Part 1 (Basics): `tsc` and strict mode, primitive types, arrays, tuples, `any` vs `unknown`
 
 ## Currently learning
 
-- Part 1 (Basics): `tsc` and strict mode, primitive types, arrays, tuples, `any` vs `unknown`
+- Part 2 (Functions and Objects): typed parameters, optional and default params, object types, `type` vs `interface`
 
 ## Key points (quick revision)
 
