@@ -31,5 +31,5 @@ const fixed: readonly [string, number] = ["Anu", 25];
 
 // fixed[0] = "Anu";   // error: Cannot assign to '0' because it is a read-only property
 
-// Destructure
+// Destructuring
 const [productName, price]: [string, number] = ["Honda", 200000];

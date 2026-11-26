@@ -24,6 +24,8 @@ Building solid TypeScript foundations: write typed code, read compiler errors, a
 - **Arrays**: `number[]` or `Array<number>`, every item must be the same type.
 - **Tuples**: fixed length and a fixed type per position, `[string, number]`. React's `useState` returns one.
 - **`any` vs `unknown`**: `any` switches type checking off, `unknown` forces you to check the type before using the value. Prefer `unknown`.
+- **Narrowing**: checking a type with `typeof`/`in`/`instanceof`. Required for `unknown`, optional (and unsafe to skip) for `any`.
+- **Objects**: `any` lets you read any property unchecked (typos and missing fields crash at runtime), `unknown` needs `typeof` + `!== null` + `in` checks first.
 
 ## Run a file
 
