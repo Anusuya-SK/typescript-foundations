@@ -1,3 +1,4 @@
+export {};
 // JavaScript: a plain array
 const user1 = ["Anu", 25];
 

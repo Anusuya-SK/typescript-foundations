@@ -1,3 +1,4 @@
+export {};
 // --- JavaScript (for comparison, would crash at runtime) ---
 // let value1 = "hello";
 // value1 = 34;

@@ -1,3 +1,4 @@
+export {};
 // The pattern is, variable name: type = value;
 
 let age: number = 25;

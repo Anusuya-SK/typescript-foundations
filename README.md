@@ -7,13 +7,15 @@ Building solid TypeScript foundations: write typed code, read compiler errors, a
 - Project setup with TypeScript, `tsx` and `@types/node`
 - `tsconfig.json` with strict mode
 - `.gitignore` and GitHub repo setup
-- Part 1 (Basics): `tsc` and strict mode, primitive types, arrays, tuples, `any` vs `unknown`
+- Basics: `tsc` and strict mode, primitive types, arrays, tuples, `any` vs `unknown`
 
 ## Currently learning
 
-- Part 2 (Functions and Objects): typed parameters, optional and default params, object types, `type` vs `interface`
+- Functions and Objects: typed parameters, optional and default params, object types, `type` vs `interface`
 
 ## Key points (quick revision)
+
+- **`export {};`**: makes a file a module so its top-level names don't clash with other files.
 
 ### Part 1: Basics
 
@@ -27,6 +29,12 @@ Building solid TypeScript foundations: write typed code, read compiler errors, a
 - **`any` vs `unknown`**: `any` switches type checking off, `unknown` forces you to check the type before using the value. Prefer `unknown`.
 - **Narrowing**: checking a type with `typeof`/`in`/`instanceof`. Required for `unknown`, optional (and unsafe to skip) for `any`.
 - **Objects**: `any` lets you read any property unchecked (typos and missing fields crash at runtime), `unknown` needs `typeof` + `!== null` + `in` checks first.
+
+### Part 2: Functions and Objects
+
+- **Function types**: `(a: number, b: number): number`, types after each parameter and after `)` for the return.
+- **Optional vs default**: `title?: string` may be skipped (value is `string | undefined`), `greeting = "Hello"` falls back to a default. Rule: optional parameters must come after required ones
+- **`void`**: the function returns nothing.
 
 ## Run a file
 
